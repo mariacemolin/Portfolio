@@ -1,50 +1,90 @@
-/* Reset básico */
+/* Reset de estilos padrões */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-section {
-    margin: 20px 0;
-}
-
-h2 {
-    font-size: 2em;
     margin-bottom: 10px;
 }
 
-ul {
-    list-style-type: none;
+header p {
+    font-style: italic;
 }
 
-ul li {
+section {
+    padding: 40px 0;
+}
+
+#sobre {
+    background: #fff;
+    text-align: center;
+}
+
+#sobre img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#projetos {
+    background: #f9f9f9;
+}
+
+.projeto {
+    background: #fff;
+    padding: 20px;
     margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contato input,
+#contato textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contato button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
+    background: #333;
+    color: #fff;
     text-align: center;
+    padding: 20px;
     margin-top: 40px;
 }
