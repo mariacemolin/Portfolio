@@ -3,36 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao meu Portfólio!</h1>
-        <p>Desenvolvedor Web</p>
+        <div class="container">
+            <h1>Olá, sou [Seu Nome]</h1>
+            <p>Desenvolvedor Web | Designer | Criador</p>
+        </div>
     </header>
-
+    
     <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras.</p>
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor apaixonado por criar soluções inovadoras para a web.</p>
+            <img src="assets/profile.jpg" alt="Foto de Perfil">
+        </div>
     </section>
 
     <section id="projetos">
-        <h2>Projetos</h2>
-        <ul>
-            <li><a href="https://github.com/seu_usuario/projeto1">Projeto 1</a></li>
-            <li><a href="https://github.com/seu_usuario/projeto2">Projeto 2</a></li>
-        </ul>
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1.</p>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2.</p>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 3</h3>
+                <p>Descrição do projeto 3.</p>
+            </div>
+        </div>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: exemplo@dominio.com</p>
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Meu Portfólio</p>
+        <div class="container">
+            <p>&copy; 2025 Meu Portfólio | Todos os direitos reservados</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
