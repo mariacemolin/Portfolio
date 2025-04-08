@@ -1,5 +1,4 @@
-// Animação para o envio do formulário
-document.getElementById("form-contato").addEventListener("submit", function(event) {
+document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();
-    alert("Formulário enviado com sucesso!");
+    alert('Mensagem enviada com sucesso!');
 });
