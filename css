@@ -1,45 +1,46 @@
+/* Resetando margens e preenchimentos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 header {
     background-color: #333;
-    color: white;
-    padding: 20px 0;
+    color: #fff;
+    padding: 1em 0;
     text-align: center;
 }
 
 header nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
+header nav a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Seções */
 section {
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 h2 {
@@ -47,36 +48,60 @@ h2 {
     margin-bottom: 20px;
 }
 
-#habilidades ul {
-    list-style: none;
-    text-align: center;
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
-#habilidades ul li {
-    display: inline-block;
-    margin: 10px 20px;
-    font-size: 18px;
-}
-
-.projeto {
-    display: inline-block;
-    width: 45%;
-    margin: 20px 2.5%;
+/* Cards de Projetos */
+.project-card {
     background-color: #fff;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.projeto img {
-    max-width: 100%;
-    height: auto;
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
 }
 
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Formulário */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 10px 0;
 }
