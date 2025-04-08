@@ -3,49 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Criativo</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Olá, eu sou <span class="highlight">Seu Nome</span></h1>
-            <p>Desenvolvedor Web Criativo e Apaixonado por Código!</p>
+            <div class="logo">
+                <h1><span>Seu</span> Nome</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Olá, eu sou <span class="highlight">Seu Nome</span></h1>
+            <p>Desenvolvedor Web Criativo e Apaixonado por Código</p>
+        </div>
+    </section>
+
     <section id="sobre">
         <div class="container">
             <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor web com experiência em HTML, CSS, JavaScript e frameworks modernos.</p>
-            <img src="images/sua-imagem.jpg" alt="Sua foto" class="imagem-perfil">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou um desenvolvedor web especializado em criar experiências incríveis com tecnologias como HTML, CSS, JavaScript e frameworks modernos. Sempre em busca de aprender e aplicar novas técnicas.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/sua-imagem.jpg" alt="Sua imagem">
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="projetos">
         <div class="container">
             <h2>Meus Projetos</h2>
-            <div class="projeto">
-                <img src="images/projeto1.jpg" alt="Projeto 1">
-                <h3>Projeto 1</h3>
-                <p>Descrição do projeto 1</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/images/projeto1.jpg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição detalhada do projeto e tecnologias utilizadas.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/projeto2.jpg" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição detalhada do projeto e tecnologias utilizadas.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/projeto3.jpg" alt="Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição detalhada do projeto e tecnologias utilizadas.</p>
+                </div>
             </div>
-            <div class="projeto">
-                <img src="images/projeto2.jpg" alt="Projeto 2">
-                <h3>Projeto 2</h3>
-                <p>Descrição do projeto 2</p>
-            </div>
-            <!-- Adicione mais projetos conforme necessário -->
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="form-contato">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu Email" required>
+                <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>Contato: seuemail@dominio.com</p>
-            <p>&copy; 2025 Seu Nome</p>
+            <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
