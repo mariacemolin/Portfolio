@@ -1,4 +1,4 @@
-/* Definições globais */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -7,92 +7,182 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: #f0f0f0;
     color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-h1, h2, h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f8f8;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
-/* Estilo do header */
+/* Cabeçalho */
 header {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
     color: white;
-    padding: 50px 0;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #feb47b;
+}
+
+/* Seção Hero */
+#hero {
+    background: url('assets/images/hero-bg.jpg') center center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-header .highlight {
-    color: #ffe600;
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #feb47b;
 }
 
 /* Seção Sobre */
 #sobre {
-    background: #fff;
-    padding: 50px 0;
+    background: white;
+    padding: 80px 0;
     text-align: center;
 }
 
-#sobre p {
-    font-size: 1.2em;
-    color: #666;
+#sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
-.imagem-perfil {
+.about-content {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about-image img {
+    width: 250px;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Seção Projetos */
 #projetos {
-    background: #f8f8f8;
-    padding: 50px 0;
+    background: #f0f0f0;
+    padding: 80px 0;
 }
 
-.projeto {
+#projetos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projeto img {
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
     width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Seção Contato */
+#contato {
+    background: #333;
+    color: white;
+    padding: 60px 0;
+}
+
+#contato h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
     border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
-.projeto h3 {
-    margin-top: 10px;
-    color: #ff7e5f;
+button {
+    background-color: #feb47b;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.projeto p {
-    font-size: 1em;
-    color: #666;
+button:hover {
+    background-color: #ff7e5f;
 }
 
-/* Estilo do footer */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
-}
-
-footer p {
-    font-size: 0.9em;
 }
