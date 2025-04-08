@@ -3,62 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Desenvolvedor">
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Olá, me chamo  [Maria Eduarda Cemolin]</h1>
-            <p>Estudande da escola Dr Marins </p>
+            <h1>Bem-vindo ao Meu Portfólio!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
+
     <section id="sobre">
         <div class="container">
             <h2>Sobre Mim</h2>
-            <p>Sou uma pessoa sonhadora, meu maior sonho e passar em direito em uma federal.</p>
-            <img src="assets/profile.jpg" alt="Foto de Perfil">
+            <p>Olá, sou um desenvolvedor apaixonado por tecnologia e soluções criativas. Estou sempre em busca de novos desafios para melhorar minhas habilidades e criar projetos inovadores.</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Git, GitHub</li>
+                <li>APIs RESTful</li>
+            </ul>
         </div>
     </section>
 
     <section id="projetos">
         <div class="container">
-            <h2>Projetos</h2>
+            <h2>Meus Projetos</h2>
             <div class="projeto">
+                <img src="assets/img/project1.jpg" alt="Projeto 1">
                 <h3>Projeto 1</h3>
                 <p>Descrição do projeto 1.</p>
             </div>
             <div class="projeto">
+                <img src="assets/img/project2.jpg" alt="Projeto 2">
                 <h3>Projeto 2</h3>
                 <p>Descrição do projeto 2.</p>
-            </div>
-            <div class="projeto">
-                <h3>Projeto 3</h3>
-                <p>Descrição do projeto 3.</p>
             </div>
         </div>
     </section>
 
     <section id="contato">
         <div class="container">
-            <h2>Contato</h2>
-            <form>
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem"></textarea>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Meu Portfólio | Todos os direitos reservados</p>
-        </div>
+        <p>&copy; 2025 Meu Portfólio | Feito por [Seu Nome]</p>
     </footer>
 
     <script src="script.js"></script>
