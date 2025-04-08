@@ -7,37 +7,36 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #FF4B2B, #FF416C);
-    color: #fff;
-    line-height: 1.6;
+    background: linear-gradient(135deg, #ff6a00, #ff4b2b);
+    color: white;
 }
 
-/* Header */
-header {
+/* Hero Section */
+.hero {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    background: linear-gradient(45deg, #ff6a00, #ff4b2b);
     text-align: center;
+    background: linear-gradient(135deg, #ff6a00, #d84e64);
+    color: white;
+    position: relative;
 }
 
-header h1 {
-    font-size: 4rem;
+.hero-content h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
-    animation: slideIn 1s ease-out;
-    color: #fff;
+    animation: fadeInUp 1s ease-out;
 }
 
-header p {
+.hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-header .btn-primary {
-    background-color: #FF416C;
-    color: #fff;
+.hero .btn-main {
+    background-color: #ff416c;
+    color: white;
     padding: 15px 30px;
     border-radius: 50px;
     text-transform: uppercase;
@@ -47,53 +46,145 @@ header .btn-primary {
     transition: transform 0.3s ease;
 }
 
-header .btn-primary:hover {
+.hero .btn-main:hover {
     transform: scale(1.1);
 }
 
 /* Seções */
 .section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     text-align: center;
-    background: #1e1e1e;
-    color: #fff;
 }
 
 .section-title h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #FF6A00;
-    text-transform: uppercase;
-    animation: fadeIn 2s ease-out;
+    color: #ff6a00;
+}
+
+/* Sobre Mim */
+.timeline {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timeline-item {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
 }
 
 /* Habilidades */
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-.skill-box {
-    background: linear-gradient(135deg, #ff6a00, #ff416c);
-    padding: 30px;
-    font-size: 1.5rem;
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background 0.3s ease;
+.skill {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.skill-box:hover {
-    transform: translateY(-10px);
-    background: linear-gradient(135deg, #FF416C, #FF6A00);
+.progress-bar {
+    height: 10px;
+    background-color: #ff416c;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 /* Projetos */
-.project-cards {
+.project-gallery {
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #444;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: #ff416c;
+}
+
+.project-card .btn-project {
+    background-color: #ff416c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.project-card .btn-project:hover {
+    transform: scale(1.1);
+}
+
+/* Depoimentos */
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.testimonial {
+    background: #333;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Contato */
+form input,
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #444;
+    color: white;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #ff416c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,9 +1,15 @@
-// Animações no scroll
-window.addEventListener('scroll', function() {
-    const title = document.querySelector('.section-title h2');
-    if (window.scrollY > 100) {
-        title.classList.add('animate');
-    } else {
-        title.classList.remove('animate');
-    }
+// Animação de scroll
+window.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        if (isElementInViewport(section)) {
+            section.classList.add('in-view');
+        }
+    });
 });
+
+// Função para verificar se um elemento está visível na tela
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+}

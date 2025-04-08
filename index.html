@@ -7,28 +7,127 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Bem-vindo ao Meu Mundo Criativo!</h1>
-            <p>Eu sou [Seu Nome], desenvolvedor web e criador de experiências incríveis.</p>
-            <a href="#projetos" class="btn-primary">Ver Projetos</a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Olá, eu sou [Seu Nome]</h1>
+            <p>Desenvolvedor Web & Designer Criativo</p>
+            <a href="#sobre" class="btn-main">Saiba Mais</a>
         </div>
     </header>
 
+    <!-- Sobre Mim Section -->
     <section id="sobre" class="section">
         <div class="section-title">
             <h2>Sobre Mim</h2>
         </div>
-        <div class="content">
-            <p>Sou um desenvolvedor apaixonado por design, criando interfaces visualmente impactantes e com ótima usabilidade. Minha missão é transformar ideias em realidade digital!</p>
+        <div class="about-content">
+            <p>Sou um desenvolvedor apaixonado por criar soluções inovadoras e funcionais. Com experiência em front-end, design de interfaces e usabilidade, busco transformar ideias em experiências digitais únicas.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2015</h3>
+                    <p>Comecei a aprender HTML e CSS</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2017</h3>
+                    <p>Primeiro projeto com JavaScript e jQuery</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2020</h3>
+                    <p>Foco em React e Node.js</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Habilidades Section -->
     <section id="habilidades" class="section">
         <div class="section-title">
             <h2>Minhas Habilidades</h2>
         </div>
         <div class="skills">
-            <div class="skill-box">HTML</div>
-            <div class="skill-box">CSS</div>
-            <div class="skill-box">JavaScript</div>
+            <div class="skill">
+                <h3>HTML5</h3>
+                <div class="progress-bar" style="width: 95%"></div>
+            </div>
+            <div class="skill">
+                <h3>CSS3</h3>
+                <div class="progress-bar" style="width: 90%"></div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar" style="width: 80%"></div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress-bar" style="width: 85%"></div>
+            </div>
+            <div class="skill">
+                <h3>Node.js</h3>
+                <div class="progress-bar" style="width: 75%"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="section">
+        <div class="section-title">
+            <h2>Meus Projetos</h2>
+        </div>
+        <div class="project-gallery">
+            <div class="project-card">
+                <h3>Projeto 1</h3>
+                <p>Um site dinâmico com animações modernas e interatividade.</p>
+                <a href="#" class="btn-project">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Projeto 2</h3>
+                <p>Aplicativo web responsivo utilizando React.js e Firebase.</p>
+                <a href="#" class="btn-project">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Projeto 3</h3>
+                <p>Landing page com design criativo e interativo.</p>
+                <a href="#" class="btn-project">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="section">
+        <div class="section-title">
+            <h2>Depoimentos</h2>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"[Seu Nome] transformou nossa visão em um produto incrível. Ele realmente entende de design e funcionalidade!"</p>
+                <p>- Cliente 1</p>
+            </div>
+            <div class="testimonial">
+                <p>"Um excelente desenvolvedor e parceiro de negócios. Sempre entrega no prazo e com alta qualidade!"</p>
+                <p>- Cliente 2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section">
+        <div class="section-title">
+            <h2>Entre em Contato</h2>
+        </div>
+        <form>
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn-main">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 [Seu Nome] - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
