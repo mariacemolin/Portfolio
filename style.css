@@ -1,0 +1,98 @@
+/* Definições globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilo do header */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header .highlight {
+    color: #ffe600;
+}
+
+/* Seção Sobre */
+#sobre {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.imagem-perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+/* Seção Projetos */
+#projetos {
+    background: #f8f8f8;
+    padding: 50px 0;
+}
+
+.projeto {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.projeto h3 {
+    margin-top: 10px;
+    color: #ff7e5f;
+}
+
+.projeto p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9em;
+}
