@@ -3,74 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio Criativo de [Seu Nome]">
     <title>Portfólio Criativo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Olá, sou [Seu Nome]</h1>
-            <p>Desenvolvedor Web Criativo & Designer</p>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+        <div class="header-content">
+            <h1>Bem-vindo ao Meu Portfólio</h1>
+            <p>Eu sou [Seu Nome] - Desenvolvedor Web & Designer Criativo</p>
+            <a href="#projetos" class="btn-primary">Ver Projetos</a>
         </div>
     </header>
 
     <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor web apaixonado por criar interfaces dinâmicas e funcionais. Meu foco é sempre na experiência do usuário e em soluções inovadoras.</p>
+        <div class="section-title">
+            <h2>Sobre Mim</h2>
+        </div>
+        <div class="content">
+            <p>Sou apaixonado por criar experiências digitais impactantes. Tenho experiência com front-end, design de interfaces e sou fã de novas tecnologias!</p>
+        </div>
     </section>
 
     <section id="habilidades">
-        <h2>Habilidades</h2>
+        <div class="section-title">
+            <h2>Minhas Habilidades</h2>
+        </div>
         <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Node.js</div>
+            <div class="skill-box">HTML5</div>
+            <div class="skill-box">CSS3</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">React</div>
+            <div class="skill-box">Node.js</div>
         </div>
     </section>
 
     <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <div class="project">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
-            <a href="#" target="_blank">Ver mais</a>
+        <div class="section-title">
+            <h2>Projetos</h2>
         </div>
-        <div class="project">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-            <a href="#" target="_blank">Ver mais</a>
+        <div class="project-cards">
+            <div class="project-card">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto, tecnologias usadas e resultados.</p>
+                <a href="#" class="btn-secondary">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto, tecnologias usadas e resultados.</p>
+                <a href="#" class="btn-secondary">Ver Projeto</a>
+            </div>
         </div>
     </section>
 
     <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form action="#">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
+        <div class="section-title">
+            <h2>Entre em Contato</h2>
+        </div>
+        <form>
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn-primary">Enviar</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 [Seu Nome] - Todos os direitos reservados.</p>
+        <p>&copy; 2025 [Seu Nome] - Todos os direitos reservados</p>
     </footer>
 
     <script src="script.js"></script>
